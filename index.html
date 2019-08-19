@@ -134,6 +134,7 @@
     }
 
     #controls button {
+        float:left; 
         font-size: .9em;
         
     }
@@ -183,6 +184,16 @@
 
     }
     */
+
+
+    #instructions {
+        padding-top:.5em;
+        padding-left:1em;
+        float:left;
+        font-size: .75em;
+        font-color: gray;
+    }
+
     /* ::style */
     </style>
   </head>
@@ -691,6 +702,11 @@ function viz() {
 
     })
 
+    controls
+    .append("div")
+    .attr("id","instructions")
+
+    .html("Drag to pan. Scrollwheel zooms in/out")
     
 
     var scaleLegend = (function(){
